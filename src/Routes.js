@@ -2,19 +2,25 @@ import React from 'react';
 import { Switch, Redirect } from 'react-router-dom';
 
 import { LayoutRouteHandler } from './components';
-import { DefaultLayout } from './layout';
+import {
+	DefaultLayout,
+	FullPageLayout
+} from './layout';
 
-import { Home as HomeView } from './views';
+import {
+	Home as HomeView,
+	Welcome as WelcomeView
+} from './views';
 
 const Routes = () => {
 	return (
 		<Switch>
-			{/*<Redirect exact from="/" to="profile/home" />*/}
 			<LayoutRouteHandler
 				component={HomeView}
-				layout={DefaultLayout}
+				layout={FullPageLayout}
 				exact
-				path="/home" />
+				path=""
+			/>
 		</Switch>
 	);
 };
