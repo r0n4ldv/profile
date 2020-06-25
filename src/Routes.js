@@ -19,7 +19,7 @@ const Routes = () => {
 				component={WelcomeView}
 				layout={FullPageLayout}
 				exact
-				path="/" />
+				path="" />
 			<LayoutRouteHandler
 				component={HomeView}
 				layout={DefaultLayout}
