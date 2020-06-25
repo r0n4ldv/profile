@@ -19,8 +19,8 @@ const Routes = () => {
 				component={HomeView}
 				layout={DefaultLayout}
 				exact
-				path="" 
-    />
+				path=""
+			/>
 		</Switch>
 	);
 };
