@@ -9,12 +9,12 @@ import { Home as HomeView } from './views';
 const Routes = () => {
 	return (
 		<Switch>
-			<Redirect exact from="/" to="/home" />
+			{/*<Redirect exact from="profile/" to="profile/home" />*/}
 			<LayoutRouteHandler
 				commponent={HomeView}
 				layout={DefaultLayout}
 				exact
-				path="/home" />
+				path="/" />
 		</Switch>
 	);
 };
