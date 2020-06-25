@@ -2,16 +2,23 @@ import React from 'react';
 
 import {
 	ProfileHeader,
-	ProfileBody,
 	ProfileFooter
 } from './components';
 
 const DefaultLayout = props => {
+	const { children } = props;
+
 	return (
 		<div className="container">
-			<ProfileHeader />
-			<ProfileBody />
-			<ProfileFooter />
+			<div className="header-container">
+				<ProfileHeader />
+			</div>
+			<div className="body-container">
+				{children}
+			</div>
+			<div className="footer-container">
+				<ProfileFooter />
+			</div>
 		</div>
 	);
 };

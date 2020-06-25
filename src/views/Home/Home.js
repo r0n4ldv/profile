@@ -2,7 +2,10 @@ import React from 'react';
 
 const Home = props => {
 	return (
-		<h1>Home</h1>
+		<React.Fragment>
+			<h3>Home</h3>
+			<p>Content here</p>
+		</React.Fragment>
 	);
 };
 
