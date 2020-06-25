@@ -9,9 +9,9 @@ import { Home as HomeView } from './views';
 const Routes = () => {
 	return (
 		<Switch>
-			<Redirect exact from="/" to="/home" />
+			{/*<Redirect exact from="/" to="profile/home" />*/}
 			<LayoutRouteHandler
-				commponent={HomeView}
+				component={HomeView}
 				layout={DefaultLayout}
 				exact
 				path="/home" />
