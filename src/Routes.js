@@ -17,7 +17,7 @@ const Routes = () => {
 		<Switch>
 			<LayoutRouteHandler
 				component={HomeView}
-				layout={DefaultLayout}
+				layout={FullPageLayout}
 				exact
 				path=""
 			/>
