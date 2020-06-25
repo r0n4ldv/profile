@@ -16,15 +16,11 @@ const Routes = () => {
 	return (
 		<Switch>
 			<LayoutRouteHandler
-				component={WelcomeView}
-				layout={FullPageLayout}
-				exact
-				path="" />
-			<LayoutRouteHandler
 				component={HomeView}
 				layout={DefaultLayout}
 				exact
-				path="/home" />
+				path="" 
+    />
 		</Switch>
 	);
 };
